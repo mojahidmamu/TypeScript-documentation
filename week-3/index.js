@@ -3,14 +3,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // JavaScript-এ API Call, Database Query, File Read ইত্যাদি সময় নেয়।
 // এই ধরনের কাজকে Asynchronous Operation বলে।
-// Example: 
+// Example:
 async function getMessage() {
     return "Hello TypeScript";
 }
 getMessage().then((message) => {
     console.log(message);
 });
-// Number Example: 
+// Number Example:
 async function getNumber() {
     return 42;
 }
@@ -40,11 +40,15 @@ async function getNumbers() {
 getNumbers().then((number) => {
     console.log(number);
 });
-// // Q3: Review: Async/Await এর সুবিধা কী?
-// Async/Await ব্যবহার করার সুবিধা হল এটি asynchronous code কে synchronous code-এর মতো readable এবং maintainable করে তোলে।
-// Q4: Review: Async/Await এর ব্যবহার কোথায় করা হয়?
-// Async/Await সাধারণত API calls, database queries, file operations ইত্যাদিতে ব্যবহার করা হয় যেখানে asynchronous operations প্রয়োজন হয়।
-// Q5: Review: Async/Await এর সাথে Error Handling কিভাবে করা হয়?
-// Async/Await এর সাথে Error Handling করার জন্য try...catch block ব্যবহার করা হয়।
-// -----------------------------------------------------------
+async function fetchUserData(userId) {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
+    const userData = await response.json();
+    return [userData];
+}
+async function displayUserData(userId) {
+    const users = await fetchUserData(userId);
+    console.log(users);
+}
+displayUserData(1);
+// Q1: Fetch API Data: Fetch API Data করার জন্য আমরা fetch() function ব্যবহার করি। এটি একটি asynchronous operation যা একটি Promise return করে। আমরা await keyword ব্যবহার করে এই Promise-এর result কে wait করতে পারি।
 //# sourceMappingURL=index.js.map
