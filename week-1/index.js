@@ -52,4 +52,14 @@ let person = { name: "Abdullah", age: 21 };
 console.log(person);
 console.log("Name:", person.name); // Accessing the name property of the object
 console.log("Age:", person.age); // Accessing the age property of the object
+// 7. Function:
+function add(a, b) {
+    return a + b;
+}
+add(10, 20); // Calling the function with two numbers
+// Arrow Function:
+const greet = (name) => {
+    return `Hello, ${name}!`;
+};
+console.log(greet("Abdullah all Mojahid")); // Calling the arrow function with a name
 //# sourceMappingURL=index.js.map
