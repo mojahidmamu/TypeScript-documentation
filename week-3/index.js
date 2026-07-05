@@ -40,5 +40,11 @@ async function getNumbers() {
 getNumbers().then((number) => {
     console.log(number);
 });
-// 
+// // Q3: Review: Async/Await এর সুবিধা কী?
+// Async/Await ব্যবহার করার সুবিধা হল এটি asynchronous code কে synchronous code-এর মতো readable এবং maintainable করে তোলে।
+// Q4: Review: Async/Await এর ব্যবহার কোথায় করা হয়?
+// Async/Await সাধারণত API calls, database queries, file operations ইত্যাদিতে ব্যবহার করা হয় যেখানে asynchronous operations প্রয়োজন হয়।
+// Q5: Review: Async/Await এর সাথে Error Handling কিভাবে করা হয়?
+// Async/Await এর সাথে Error Handling করার জন্য try...catch block ব্যবহার করা হয়।
+// -----------------------------------------------------------
 //# sourceMappingURL=index.js.map
