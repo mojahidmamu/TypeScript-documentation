@@ -83,3 +83,8 @@ displayUserData(1);
 
 // Q1: Fetch API Data: Fetch API Data করার জন্য আমরা fetch() function ব্যবহার করি। এটি একটি asynchronous operation যা একটি Promise return করে। আমরা await keyword ব্যবহার করে এই Promise-এর result কে wait করতে পারি।
 
+
+
+
+// -------------------------------------------
+// TypeScript in React: 
