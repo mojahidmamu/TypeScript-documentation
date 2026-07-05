@@ -15,4 +15,15 @@ const student2 = {
     isStudent: false,
 };
 console.log(student1);
+// 2. Type Alias:
+// 3. Union Type:
+let id;
+id = 101;
+id = "A101";
+// ...
+function printId(id) {
+    console.log(id);
+}
+printId(101);
+printId("ABC");
 //# sourceMappingURL=index.js.map
