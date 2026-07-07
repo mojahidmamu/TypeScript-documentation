@@ -75,7 +75,7 @@ async function fetchUserData(userId: number): Promise<User[]> {
 
 async function displayUserData(userId: number) {
   const users = await fetchUserData(userId);
-  console.log(users);
+  // console.log(users);
 }
 
 displayUserData(1);
@@ -85,3 +85,20 @@ displayUserData(1);
 
 
  
+
+// --------------
+// Custom Type: 
+type user = {userName: string,   userAge: number};
+
+let users: user[];
+users = [];
+
+let user1: user ;
+user1 = {userName: "John", userAge: 30};
+users.push(user1);
+
+let user2: user;
+user2 = {userName: "Jane", userAge: 25};
+users.push(user2);
+
+console.log(users);

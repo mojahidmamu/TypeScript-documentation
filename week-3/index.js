@@ -47,8 +47,16 @@ async function fetchUserData(userId) {
 }
 async function displayUserData(userId) {
     const users = await fetchUserData(userId);
-    console.log(users);
+    // console.log(users);
 }
 displayUserData(1);
-// Q1: Fetch API Data: Fetch API Data করার জন্য আমরা fetch() function ব্যবহার করি। এটি একটি asynchronous operation যা একটি Promise return করে। আমরা await keyword ব্যবহার করে এই Promise-এর result কে wait করতে পারি।
+let users;
+users = [];
+let user1;
+user1 = { userName: "John", userAge: 30 };
+users.push(user1);
+let user2;
+user2 = { userName: "Jane", userAge: 25 };
+users.push(user2);
+console.log(users);
 //# sourceMappingURL=index.js.map
