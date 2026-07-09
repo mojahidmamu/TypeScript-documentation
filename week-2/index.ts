@@ -46,3 +46,15 @@ names.forEach((name) => {
   console.log(name.toUpperCase());
 })
 
+
+// Narrowing:
+function printId2(id: string | number) {
+  if (typeof id === "string") {
+    console.log(id.toUpperCase());
+  }
+  else {
+    console.log(id);
+  }
+}
+printId2(111);
+printId2("MOJO");
