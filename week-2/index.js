@@ -65,5 +65,5 @@ class Point {
 const pt = new Point();
 // Prints 0, 0
 console.log(`${pt.x}, ${pt.y}`);
-// Modules:
+// Template Literal Types: 
 //# sourceMappingURL=index.js.map
