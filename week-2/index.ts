@@ -30,31 +30,36 @@ id = "A101";
 
 // ...
 function printId(id: string | number) {
-    console.log(id);
+  console.log(id);
 }
 printId(101);
 printId("ABC");
-
 
 // Anonymous Function:
 const names = ["Mojahid", "Rahim", "Karim"];
 names.forEach(function (name) {
   console.log(name.toUpperCase());
-})
+});
 
 names.forEach((name) => {
   console.log(name.toUpperCase());
-})
-
+});
 
 // Narrowing:
 function printId2(id: string | number) {
   if (typeof id === "string") {
     console.log(id.toUpperCase());
-  }
-  else {
+  } else {
     console.log(id);
   }
 }
 printId2(111);
 printId2("MOJO");
+
+// Generic Function:
+function firstElement<X>(arr: X[]): X | undefined {
+  return arr[0];
+}
+const s = firstElement(["a", "b", "c"]); // s is of type 'string'
+const n = firstElement([1, 2, 3]);       // n is of type 'number'
+const u = firstElement([]);              // u is of type undefined
