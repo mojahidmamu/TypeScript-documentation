@@ -63,3 +63,24 @@ function firstElement<X>(arr: X[]): X | undefined {
 const s = firstElement(["a", "b", "c"]); // s is of type 'string'
 const n = firstElement([1, 2, 3]);       // n is of type 'number'
 const u = firstElement([]);              // u is of type undefined
+
+
+// Parameter Destructuring:
+function printName({ first, last }: { first: string; last: string }) {
+  console.log(`${first} ${last}`);
+}
+printName({ first: "John", last: "Doe" });
+
+// class: 
+class Point {
+  x = 0;
+  y = 0;
+}
+ 
+const pt = new Point();
+// Prints 0, 0
+console.log(`${pt.x}, ${pt.y}`);
+
+
+
+// Modules:

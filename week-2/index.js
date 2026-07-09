@@ -34,4 +34,36 @@ names.forEach(function (name) {
 names.forEach((name) => {
     console.log(name.toUpperCase());
 });
+// Narrowing:
+function printId2(id) {
+    if (typeof id === "string") {
+        console.log(id.toUpperCase());
+    }
+    else {
+        console.log(id);
+    }
+}
+printId2(111);
+printId2("MOJO");
+// Generic Function:
+function firstElement(arr) {
+    return arr[0];
+}
+const s = firstElement(["a", "b", "c"]); // s is of type 'string'
+const n = firstElement([1, 2, 3]); // n is of type 'number'
+const u = firstElement([]); // u is of type undefined
+// Parameter Destructuring:
+function printName({ first, last }) {
+    console.log(`${first} ${last}`);
+}
+printName({ first: "John", last: "Doe" });
+// class: 
+class Point {
+    x = 0;
+    y = 0;
+}
+const pt = new Point();
+// Prints 0, 0
+console.log(`${pt.x}, ${pt.y}`);
+// Modules:
 //# sourceMappingURL=index.js.map
