@@ -34,3 +34,15 @@ function printId(id: string | number) {
 }
 printId(101);
 printId("ABC");
+
+
+// Anonymous Function:
+const names = ["Mojahid", "Rahim", "Karim"];
+names.forEach(function (name) {
+  console.log(name.toUpperCase());
+})
+
+names.forEach((name) => {
+  console.log(name.toUpperCase());
+})
+
