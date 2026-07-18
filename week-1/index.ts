@@ -76,3 +76,6 @@ const greet = (name: string) : string => {
 console.log(greet("Abdullah all Mojahid")); // Calling the arrow function with a name
 
 
+
+//  
+

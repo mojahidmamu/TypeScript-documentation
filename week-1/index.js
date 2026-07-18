@@ -62,4 +62,5 @@ const greet = (name) => {
     return `Hello, ${name}!`;
 };
 console.log(greet("Abdullah all Mojahid")); // Calling the arrow function with a name
+//  
 //# sourceMappingURL=index.js.map
